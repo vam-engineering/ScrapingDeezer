@@ -1,6 +1,7 @@
+# Deezer Scraper
 Two scripts available:
-1. From a Deezer profile, scraping all linked playlists
-2. Scraping a single playlist
+1. From a Deezer profile, scraping all linked playlists to .csv
+2. Scraping a single playlist to .csv
 
 How to use them:
 An ID will be requested at launch, this ID can be found in the URL of the profile/playlist. 
