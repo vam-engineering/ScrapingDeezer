@@ -24,9 +24,24 @@ while True:
         break
 
     for track in data['data']:
-        title = track['title_short']
-        artist = track['artist'].get('name')
-        tracks.append({'Title': title, 'Artist': artist})
+        title = track['title']
+        title_short = track['title_short']
+        link = track['link']
+        duration = track['duration']
+        artist_name = track['artist'].get('name')
+        artist_link = track['artist'].get('link')
+        album_name = track['album'].get('title')
+        album_link = track['album'].get('tracklist')
+        tracks.append({
+            'Title': title,
+            'Title Short': title_short,
+            'Link': link,
+            'Duration': duration,
+            'Artist': artist_name,
+            'Artist Link': artist_link,
+            'Album': album_name,
+            'Album Link': album_link
+        })
 
     # Increment the index to fetch the next set of tracks
     index += 25

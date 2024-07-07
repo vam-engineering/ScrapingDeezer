@@ -69,8 +69,8 @@ while True:
                 duration = track['duration']
                 artist_name = track['artist'].get('name')
                 artist_link = track['artist'].get('link')
-                album_name = track['album'].get('name')
-                album_link = track['album'].get('link')
+                album_name = track['album'].get('title')
+                album_link = track['album'].get('tracklist')
                 tracks.append({
                     'Title': title,
                     'Title Short': title_short,
